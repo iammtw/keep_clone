@@ -35,7 +35,7 @@ const CreateNote = (props) => {
             <form action="">
                 
                 {
-                    expand? <input type="text" placeholder="title" name='Title' value={note.title} onChange={inputEvent} autoComplete='off' /> : ''
+                    expand? <input type="text" placeholder="Title" name='title' value={note.title} onChange={inputEvent} autoComplete='off' /> : ''
                 }
 
                 <textarea name="" onClick={()=> setexpand(true)} onDoubleClick={()=> setexpand(false)} placeholder='Write a note' name='content' cols="" rows="" onChange={inputEvent}>
